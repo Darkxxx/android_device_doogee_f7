@@ -57,18 +57,12 @@ on post-fs-data
 
     chmod 0660 /dev/DW9714AF
     chown system camera /dev/DW9714AF
-	
-    chmod 0660 /dev/DW9810AF
-    chown system camera /dev/DW9810AF
 
     chmod 0660 /dev/LC898212AF
     chown system camera /dev/LC898212AF
 
     chmod 0660 /dev/BU64745GWZAF
     chown system camera /dev/BU64745GWZAF
-	
-	chmod 0660 /dev/BU6424AF
-    chown system camera /dev/BU6424AF
 
 #SMB
     chown system system /proc/smb/ScreenComm
@@ -184,7 +178,7 @@ service stp_dump /system/bin/stp_dump3
     class core
     disabled
     oneshot
-
+	
 #
 # Connectivity related services (End)
 #
@@ -194,3 +188,4 @@ service spm_script /system/bin/spm_loader
     group root
     class core
     oneshot
+
