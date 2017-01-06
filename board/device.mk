@@ -1,5 +1,5 @@
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := doogee_f7
+TARGET_OTA_ASSERT_DEVICE := DOOGEE-F7
 
 # Bionic
 
