@@ -13,7 +13,7 @@ Component Type | Details
 -------:|:-------------------------
 CPU     | 2.5GHz Octa-Core MT6797 (Helio X20)
 GPU     | Mali-T880MP4
-Memory  | 4GB RAM
+Memory  | 3GB RAM
 Shipped Android Version | 6.0
 Storage | 32GB
 Battery | 3400 mAh
