@@ -32,6 +32,10 @@ COMMON_GLOBAL_CFLAGS += -DDISABLE_HW_ID_MATCH_CHECK
 
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
 
+# Hack for building without kernel sources
+ifeq ($(TARGET_DEVICE),f7)
+$(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
+endif
 
 # Offline charging
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/BOOT/BOOT/boot/boot_mode
