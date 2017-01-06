@@ -1,0 +1,5 @@
+This is patch directory
+
+cd WORKING_DIR
+sh device/doogee/f7/patches/install.sh
+sh device/doogee/f7/patches/uninstall.sh

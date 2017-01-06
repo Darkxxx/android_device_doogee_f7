@@ -1,0 +1,21 @@
+commit 2a750a60d86a243d77fd74cc60c547cad7628a2e
+Author: verevka <verevka86@gmail.com>
+Date:   Sat Nov 19 01:08:20 2016 +0300
+
+    fix_mtk_sepolicy
+    
+    Change-Id: Icbdb4b3a37e320e468bac752fd419799fbfbcaee
+
+diff --git a/app.te b/app.te
+index 62bc07f..89f2e1e 100644
+--- a/app.te
++++ b/app.te
+@@ -351,7 +351,7 @@ neverallow appdomain efs_file:dir_file_class_set write;
+ neverallow { appdomain -shell } efs_file:dir_file_class_set read;
+ 
+ # Write to various pseudo file systems.
+-neverallow { appdomain -bluetooth -nfc }
++neverallow { appdomain -bluetooth -nfc -system_app }
+     sysfs:dir_file_class_set write;
+ neverallow appdomain
+     proc:dir_file_class_set write;
