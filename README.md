@@ -64,3 +64,4 @@ Front Camera | 5MP (OV)
  * Deepflex
  * Leskal
  * sylar156
+ * Zormax
