@@ -28,7 +28,6 @@ Front Camera | 5MP (OV)
 ### Working:
  * Hardware acceleration
  * Wi-Fi
- * Fast charging
  * GPS
  * AGPS
  * ANT (fitness trackers .etc)
@@ -46,8 +45,6 @@ Front Camera | 5MP (OV)
  * RIL for SMS/calls/internet/LTE on 1 and 2 SIM
  * MTP and Mass Storage modes
  * Audio over Bluetooth (music, calls .etc)
- * SELinux enforcement
- * Fingerprint scanner
  * Wi-Fi tethering
  * Compass
  * Offline Changer
@@ -56,6 +53,9 @@ Front Camera | 5MP (OV)
 ### In progress:
  * Fix flip case
  * HDR camera
+ * SELinux enforcement
+ * Fingerprint scanner
+ * Smartwake, Dt2w
 
 
 ### Thanks to:
