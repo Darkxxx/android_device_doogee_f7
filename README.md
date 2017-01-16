@@ -65,3 +65,4 @@ Front Camera | 5MP (OV)
  * Leskal
  * sylar156
  * Zormax
+ * M.A.D team

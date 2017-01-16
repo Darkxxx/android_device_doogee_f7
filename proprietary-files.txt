@@ -393,7 +393,6 @@ lib/drm/libdrmmtkplugin.so
 
 lib/egl/libGLES_mali.so
 
-lib/hw/audio.primary.mt6797.so
 lib/hw/camera.mt6797.so
 lib/hw/gps.mt6797.so
 lib/hw/gralloc.mt6797.so
@@ -602,7 +601,6 @@ lib64/volte_imsm.so
 
 lib64/egl/libGLES_mali.so
 
-lib64/hw/audio.primary.mt6797.so
 lib64/hw/camera.mt6797.so
 lib64/hw/fingerprint.afs.so
 lib64/hw/fingerprint.default.so
