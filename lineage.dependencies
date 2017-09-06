@@ -1,0 +1,10 @@
+[
+ {
+   "repository": "android_device_doogee_f7",
+   "target_path": "device/doogee/f7"
+ },
+ {
+   "repository": "android_kernel_doogee_f7",
+   "target_path": "kernel/doogee/f7"
+ }
+]
