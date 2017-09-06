@@ -40,6 +40,8 @@ endif
 
 # Offline charging
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/BOOT/BOOT/boot/boot_mode
+BOARD_CHARGER_DISABLE_INIT_BLANK := true
+BOARD_CHARGER_ENABLE_SUSPEND := true
 
 # BLOCK_BASED_OTA
 BLOCK_BASED_OTA := false
