@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2015-2016 The CyanogenMod Project
+# Copyright (C) 2017 The lineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Device specific overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS += device/doogee/f7/overlay
 
 # Device product elements
 include $(LOCAL_PATH)/product/*.mk
@@ -37,3 +37,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Vendor product configurations
 $(call inherit-product-if-exists, vendor/doogee/f7/f7-vendor.mk)
+
+PRODUCT_TAGS += dalvik.gc.type-precise
+
+# Camera
+PRODUCT_PACKAGES += \
+    Snap \
+
+# Charger
+PRODUCT_PACKAGES += \
+    charger_res_images \
+
+# Jelly
+PRODUCT_PACKAGES += \
+    Jelly \
