@@ -11,8 +11,8 @@ PRODUCT_PACKAGES += \
     wpa_supplicant.conf
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
-    $(LOCAL_PATH)/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
-    $(LOCAL_PATH)/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny \
+    device/doogee/f7/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
+    device/doogee/f7/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
+    device/doogee/f7/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny \
     frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
     frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml
