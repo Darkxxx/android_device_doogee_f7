@@ -1,4 +1,4 @@
 # Keyboard layout
 PRODUCT_COPY_FILES += \
-     $(LOCAL_PATH)/keylayout/mtk-kpd.kl:system/usr/keylayout/mtk-kpd.kl \
-     $(LOCAL_PATH)/keylayout/ACCDET.kl:system/usr/keylayout/ACCDET.kl
+     device/doogee/f7/keylayout/mtk-kpd.kl:system/usr/keylayout/mtk-kpd.kl \
+     device/doogee/f7/keylayout/ACCDET.kl:system/usr/keylayout/ACCDET.kl
