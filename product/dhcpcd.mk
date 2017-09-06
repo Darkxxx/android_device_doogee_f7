@@ -1,2 +1,2 @@
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf
+    device/doogee/f7/configs/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf
