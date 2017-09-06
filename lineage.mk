@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2015-2016 The CyanogenMod Project
+# Copyright (C) 2017 The lineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, $(LOCAL_PATH)/device_f7.mk)
+$(call inherit-product, device/doogee/f7/device_f7.mk)
 
 # Device display
 TARGET_SCREEN_HEIGHT := 1920
