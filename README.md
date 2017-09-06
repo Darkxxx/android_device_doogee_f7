@@ -1,9 +1,9 @@
-Doogee F7 - CM13.0
+Doogee F7 - CM14.1
 ==============
 
                                       ============== NOTE TEST ==============
 
-This branch is device for building of the CM13.0. For more information about building the ROM, read our [build manual](manual).
+This branch is device for building of the CM14.1. For more information about building the ROM, read our [build manual](manual).
 
 ---
 
