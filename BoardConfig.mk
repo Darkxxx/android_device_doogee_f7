@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017 The lineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@ TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
 # Device board elements
 include device/doogee/f7/PlatformConfig.mk
-include $(LOCAL_PATH)/board/*.mk
+include device/doogee/f7/board/*.mk
 
 # Device vendor board
 -include vendor/doogee/f7/BoardConfigVendor.mk
@@ -48,7 +48,7 @@ BLOCK_BASED_OTA := false
 TARGET_CPU_MEMCPY_OPT_DISABLE := true
 
 # EGL
-BOARD_EGL_CFG := $(LOCAL_PATH)/configs/egl.cfg
+BOARD_EGL_CFG := device/doogee/f7/configs/egl.cfg
 USE_OPENGL_RENDERER := true
 BOARD_EGL_WORKAROUND_BUG_10194508 := true
 
@@ -62,7 +62,7 @@ EXTENDED_FONT_FOOTPRINT := true
 TARGET_PROVIDES_INIT_RC := true
 
 # system.prop
-TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
+TARGET_SYSTEM_PROP := device/doogee/f7/system.prop
 
 # FM
 MTK_FM_SUPPORT := yes
