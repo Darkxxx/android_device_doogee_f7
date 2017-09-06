@@ -37,17 +37,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Vendor product configurations
 $(call inherit-product-if-exists, vendor/doogee/f7/f7-vendor.mk)
-
-PRODUCT_TAGS += dalvik.gc.type-precise
-
-# Camera
-PRODUCT_PACKAGES += \
-    Snap \
+$(call inherit-product-if-exists, vendor/doogee/f7/f7-vendor.mk)
+$(call inherit-product-if-exists, vendor/doogee/f7/f7-vendor.mk)
+$(call inherit-product-if-exists, vendor/doogee/f7/f7-vendor.mk)
 
 # Charger
 PRODUCT_PACKAGES += \
-    charger_res_images \
+    charger_res_images
 
-# Jelly
-PRODUCT_PACKAGES += \
-    Jelly \
