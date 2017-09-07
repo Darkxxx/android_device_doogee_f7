@@ -18,11 +18,12 @@
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# Inherit from doogee f7 device
+PRODUCT_MAKEFILES := \
+    device/doogee/f7/device_f7.mk
+
 # Device specific overlays
 DEVICE_PACKAGE_OVERLAYS += device/doogee/f7/overlay
-
-# Device product elements
-include device/doogee/f7/product/*.mk
 
 # Dalvik heap configurations
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxxhdpi-3072-dalvik-heap.mk)
@@ -216,32 +217,6 @@ PRODUCT_COPY_FILES += \
     device/doogee/f7/configs/media_codecs_mediatek_audio.xml:system/etc/media_codecs_mediatek_audio.xml \
     device/doogee/f7/configs/media_codecs_mediatek_video.xml:system/etc/media_codecs_mediatek_video.xml \
     device/doogee/f7/configs/mtk_omx_core.cfg:system/etc/mtk_omx_core.cfg
-
-# Default.prop
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.service.acm.enable=0 \
-    persist.sys.dun.override=0 \
-    camera.disable_zsl_mode=1 \
-    persist.sys.usb.config=mtp,adb \
-    ro.adb.secure=0 \
-    ro.secure=0 \
-    ro.allow.mock.location=0 \
-    ro.debuggable=1 \
-    dalvik.vm.dex2oat-Xms=64m \
-    dalvik.vm.dex2oat-Xmx=512m \
-    dalvik.vm.image-dex2oat-Xms=64m \
-    dalvik.vm.image-dex2oat-Xmx=64m \
-    ro.dalvik.vm.native.bridge=0 \
-    persist.service.acm.enable=0 \
-    ro.config.low_ram=false \
-    ro.adb.secure=0 \
-    ro.secure=0 \
-    security.perf_harden=0 \
-    service.adb.root=1 \
-    persist.service.adb.enable=1 \
-    persist.service.debuggable=1 \
-    persist.sys.root_access=1 \
-    ro.product.locale=tr-TR
 
 # Ramdisk
 PRODUCT_PACKAGES += \
