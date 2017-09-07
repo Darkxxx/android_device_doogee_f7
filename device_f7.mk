@@ -22,7 +22,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 DEVICE_PACKAGE_OVERLAYS += device/doogee/f7/overlay
 
 # Device product elements
-include $(LOCAL_PATH)/product/*.mk
+include device/doogee/f7/product/*.mk
 
 # Dalvik heap configurations
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxxhdpi-3072-dalvik-heap.mk)
@@ -36,9 +36,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Vendor product configurations
-$(call inherit-product-if-exists, vendor/doogee/f7/f7-vendor.mk)
-$(call inherit-product-if-exists, vendor/doogee/f7/f7-vendor.mk)
-$(call inherit-product-if-exists, vendor/doogee/f7/f7-vendor.mk)
 $(call inherit-product-if-exists, vendor/doogee/f7/f7-vendor.mk)
 
 # Charger
