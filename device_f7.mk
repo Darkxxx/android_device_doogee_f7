@@ -57,6 +57,7 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     libtinyxml
 
+# Audio Param
 PRODUCT_COPY_FILES += \
     device/doogee/f7/audio_param/AudioParamOptions.xml:system/etc/audio_param/AudioParamOptions.xml \
     device/doogee/f7/audio_param/PlaybackACF_AudioParam.xml:system/etc/audio_param/PlaybackACF_AudioParam.xml \
@@ -122,7 +123,8 @@ PRODUCT_COPY_FILES += \
     device/doogee/f7/audio/audio_policy.conf:system/etc/audio_policy.conf \
     device/doogee/f7/audio/audio_device.xml:system/etc/audio_device.xml \
     device/doogee/f7/audio/audio_em.xml:system/etc/audio_em.xml
-
+    
+# Bluetooth
 PRODUCT_COPY_FILES += \
     device/doogee/f7/configs/bluetooth/auto_pair_devlist.conf:system/etc/bluetooth/auto_pair_devlist.conf \
     device/doogee/f7/configs/bluetooth/bt_stack.conf.debug:system/etc/bluetooth/bt_stack.conf.debug \
@@ -158,13 +160,12 @@ PRODUCT_PACKAGES += \
 
 # FM Radio
 PRODUCT_PACKAGES += \
-    FMRadio \
     libfmjni \
     device/doogee/f7/configs/fmr/mt6631_fm_cust.cfg:system/etc/fmr/mt6631_fm_cust.cfg \
-	device/doogee/f7/prebuilt/FM/lib/libfmcust.so:system/lib/libfmcust.so \
-	device/doogee/f7/prebuilt/FM/lib64/libfmcust.so:system/lib64/libfmcust.so \
-	device/doogee/f7/prebuilt/FM/lib/libmtkplayer.so:system/lib/libmtkplayer.so \
-	device/doogee/f7/prebuilt/FM/lib64/libmtkplayer.so:system/lib64/libmtkplayer.so
+    device/doogee/f7/prebuilt/FM/lib/libfmcust.so:system/lib/libfmcust.so \
+    device/doogee/f7/prebuilt/FM/lib64/libfmcust.so:system/lib64/libfmcust.so \
+    device/doogee/f7/prebuilt/FM/lib/libmtkplayer.so:system/lib/libmtkplayer.so \
+    device/doogee/f7/prebuilt/FM/lib64/libmtkplayer.so:system/lib64/libmtkplayer.so
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
@@ -346,3 +347,8 @@ PRODUCT_PACKAGES += \
     device/doogee/f7/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny \
     frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
     frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml
+
+# Mtk audio
+PRODUCT_COPY_FILES += \
+     device/doogee/f7/prebuilt/audio/lib/hw/audio.primary.mt6797.so:system/lib/hw/audio.primary.mt6797.so \
+     device/doogee/f7/prebuilt/audio/lib64/hw/audio.primary.mt6797.so:system/lib64/hw/audio.primary.mt6797.so
