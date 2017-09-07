@@ -20,7 +20,6 @@ TARGET_SPECIFIC_HEADER_PATH := device/doogee/f7/include
 
 # Device board elements
 include device/doogee/f7/PlatformConfig.mk
-include device/doogee/f7/board/*.mk
 
 # Device vendor board
 -include vendor/doogee/f7/BoardConfigVendor.mk
@@ -131,6 +130,7 @@ BOARD_HARDWARE_CLASS += \
 TARGET_PROVIDES_LIBLIGHT := true
 
 # MTK Hardware
+TARGET_KMODULES := true
 BOARD_HAS_MTK_HARDWARE := true
 MTK_HARDWARE := true
 BOARD_USES_MTK_HARDWARE := true
@@ -138,6 +138,10 @@ BOARD_USES_LEGACY_MTK_AV_BLOB := true
 COMMON_GLOBAL_CFLAGS += -DADD_LEGACY_ACQUIRE_BUFFER_SYMBOL
 COMMON_GLOBAL_CFLAGS += -DMTK_HARDWARE
 COMMON_GLOBAL_CPPFLAGS += -DMTK_HARDWARE
+
+# MTK Connect
+BOARD_CONNECTIVITY_VENDOR := MediaTek
+BOARD_CONNECTIVITY_MODULE := conn_soc
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
@@ -189,6 +193,8 @@ TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 TW_DEFAULT_EXTERNAL_STORAGE := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_MAX_BRIGHTNESS := 255
+TW_NO_USB_STORAGE := true
+TW_CRYPTO_FS_TYPE := "ext4"
 TW_EXTRA_LANGUAGES := true
 
 # Vold
