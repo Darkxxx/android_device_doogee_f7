@@ -16,7 +16,7 @@
 
 # Device path
 LOCAL_PATH := device/doogee/f7
-TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
+TARGET_SPECIFIC_HEADER_PATH := device/doogee/f7/include
 
 # Device board elements
 include device/doogee/f7/PlatformConfig.mk
@@ -31,7 +31,7 @@ include device/doogee/f7/board/*.mk
 TARGET_KMODULES := true
 COMMON_GLOBAL_CFLAGS += -DDISABLE_HW_ID_MATCH_CHECK
 
-TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
+TARGET_PREBUILT_KERNEL := device/doogee/f7/kernel
 
 # Hack for building without kernel sources
 ifeq ($(TARGET_DEVICE),f7)
@@ -69,6 +69,22 @@ TARGET_SYSTEM_PROP := device/doogee/f7/system.prop
 # FM
 MTK_FM_SUPPORT := yes
 MTK_FM_RX_SUPPORT := yes
+
+# Recovery
+BOARD_HAS_NO_SELECT_BUTTON := true
+TARGET_RECOVERY_FSTAB := device/doogee/f7/rootdir/etc/fstab.mt6797
+# TWRP-specific
+ifeq ($(RECOVERY_VARIANT), twrp)
+DEVICE_RESOLUTION := 1080x1920
+DEVICE_SCREEN_WIDTH := 1080
+DEVICE_SCREEN_HEIGHT := 1920
+RECOVERY_SDCARD_ON_DATA := true
+TW_INTERNAL_STORAGE_PATH := "/data/media"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
+TW_EXTERNAL_STORAGE_PATH := "/external_sd"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
+TW_DEFAULT_EXTERNAL_STORAGE := true
+endif
 
 # Vold
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/soc/11270000.usb3/musb-hdrc/gadget/lun%d/file
