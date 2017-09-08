@@ -207,7 +207,7 @@ BOARD_CONNECTIVITY_MODULE := conn_soc
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_SELECT_BUTTON := true
-TARGET_RECOVERY_FSTAB := device/doogee/f7/rootdir/etc/fstab.mt6797
+TARGET_RECOVERY_FSTAB := device/doogee/f7/rootdir/etc/twrp.fstab
 # TWRP-specific
 ifeq ($(RECOVERY_VARIANT), twrp)
 DEVICE_RESOLUTION := 1080x1920
