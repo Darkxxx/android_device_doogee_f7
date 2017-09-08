@@ -45,6 +45,7 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 # Charger
 PRODUCT_PACKAGES += \
     charger \
+    cm_charger_res_images \
     charger_res_images
 
 # Audio
@@ -72,7 +73,7 @@ PRODUCT_COPY_FILES += \
     device/doogee/f7/audio_param/PlaybackVolDigi_AudioParam.xml:system/etc/audio_param/PlaybackVolDigi_AudioParam.xml \
     device/doogee/f7/audio_param/PlaybackVolDigi_ParamUnitDesc.xml:system/etc/audio_param/PlaybackVolDigi_ParamUnitDesc.xml \
     device/doogee/f7/audio_param/PlaybackVolUI_AudioParam.xml:system/etc/audio_param/PlaybackVolUI_AudioParam.xml \
-    device/doogee/f7 /audio_param/PlaybackVolUI_ParamUnitDesc.xml:system/etc/audio_param/PlaybackVolUI_ParamUnitDesc.xml \
+    device/doogee/f7/audio_param/PlaybackVolUI_ParamUnitDesc.xml:system/etc/audio_param/PlaybackVolUI_ParamUnitDesc.xml \
     device/doogee/f7/audio_param/Playback_AudioParam.xml:system/etc/audio_param/Playback_AudioParam.xml \
     device/doogee/f7/audio_param/Playback_ParamTreeView.xml:system/etc/audio_param/Playback_ParamTreeView.xml \
     device/doogee/f7/audio_param/Playback_ParamUnitDesc.xml:system/etc/audio_param/Playback_ParamUnitDesc.xml \
@@ -161,7 +162,6 @@ PRODUCT_PACKAGES += \
 
 # FM Radio
 PRODUCT_PACKAGES += \
-    libfmjni \
     device/doogee/f7/configs/fmr/mt6631_fm_cust.cfg:system/etc/fmr/mt6631_fm_cust.cfg \
     device/doogee/f7/prebuilt/FM/lib/libfmcust.so:system/lib/libfmcust.so \
     device/doogee/f7/prebuilt/FM/lib64/libfmcust.so:system/lib64/libfmcust.so \
@@ -285,9 +285,9 @@ PRODUCT_COPY_FILES += \
 	device/doogee/f7/tp/etc/.tp/.thermal_policy_02:system/etc/.tp/.thermal_policy_02 \
 	device/doogee/f7/tp/etc/.tp/.thermal_policy_03:system/etc/.tp/.thermal_policy_03 \
 	device/doogee/f7/tp/etc/.tp/thermal.conf:system/etc/.tp/thermal.conf \
-	device/doogee/f7//tp/etc/.tp/thermal.off.conf:system/etc/.tp/thermal.off.conf \
+	device/doogee/f7/tp/etc/.tp/thermal.off.conf:system/etc/.tp/thermal.off.conf \
 	device/doogee/f7/tp/bin/thermal:system/bin/thermal \
-	device/doogee/f7//tp/bin/thermal_manager:system/bin/thermal_manager \
+	device/doogee/f7/tp/bin/thermal_manager:system/bin/thermal_manager \
 	device/doogee/f7/tp/bin/thermald:system/bin/thermald \
 	device/doogee/f7/tp/bin/thermalloadalgod:system/bin/thermalloadalgod
 
